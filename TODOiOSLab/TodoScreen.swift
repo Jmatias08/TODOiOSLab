@@ -44,6 +44,7 @@ struct TodoScreen: View {
                         TodoRow(title: todo.title, isDone: todo.isDone,
                                 onToggle: { toggleTodo(id: todo.id) },
                                 onDelete: { todos.removeAll { $0.id == todo.id } })
+                        
                     }
                 }
             }
